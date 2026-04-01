@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-white text-black antialiased;
+    font-family: var(--font-sans);
+  }
+}
+
+@layer utilities {
+  .text-glow {
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+  }
+  
+  .glass-card {
+    @apply bg-white/5 backdrop-blur-xl border border-white/10 shadow-2xl;
+  }
+  
+  .glass-card-light {
+    @apply bg-white/70 backdrop-blur-3xl border border-neutral-100 shadow-[0_20px_60px_rgba(0,0,0,0.05)];
+  }
+
+  .glass-nav {
+    @apply bg-white/70 backdrop-blur-3xl border border-neutral-100 shadow-[0_20px_60px_rgba(0,0,0,0.08)];
+  }
+  
+  .glass-nav-dark {
+    @apply bg-black/40 backdrop-blur-2xl border border-white/10 shadow-[0_20px_50px_rgba(0,0,0,0.3)];
+  }
+
+  .premium-shadow {
+    box-shadow: 0 20px 50px -12px rgba(0, 0, 0, 0.15);
+  }
+
+  .elite-gradient {
+    background: radial-gradient(circle at top left, rgba(255,255,255,0.05) 0%, transparent 70%);
+  }
+  
+  .custom-scroll {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+  
+  .custom-scroll::-webkit-scrollbar {
+    display: none;
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "name": "Runo Elite",
+  "description": "AI-powered high-performance fitness protocol and run tracker.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
